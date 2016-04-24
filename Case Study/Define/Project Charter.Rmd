@@ -42,12 +42,11 @@ Increase the increase rate of the trading volume from 3% to the 5% by the end of
 
 **Critical to Satisfaction (linkage to customer):**
 
-The customer, operation executive officer (OEO), is interested in this problem because he makes further decision based on this process.
-And what does he want to see?
+The customer, operation executive officer (OEO), is interested in this problem because he makes further decision based on this process, so that the future increase rate of trading volumn can be as much as possible.
 
 **Defect Definition (include opportunity):**
 
-Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  Give me an operational definition of significant, material
+Assuming that the whole environment of the finance market in China is mild, a significant decrease or no material increase may be regarded as a defect in the project.  Thus, we regard the 0% or less increase rate as defect.
 
 **Scope of Project:**
 
