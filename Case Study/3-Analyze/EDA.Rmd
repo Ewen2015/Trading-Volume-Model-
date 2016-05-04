@@ -1,6 +1,6 @@
 ---
 title: "EDA"
-author: "Enqun Wang"
+author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "May 3, 2016"
 output: html_document
 ---
@@ -26,6 +26,15 @@ predictorsTrans = data.frame(trans = predict(trans, df[,-1]))
 X = predictorsTrans[,-1]
 y = predictorsTrans[,1]
 trans.df = data.frame(data = df[,1], y, X)
+```
+
+Based on cause and effect relationship, we divide the variales into four causes.
+
+```{r}
+X.market = X[, c(8, 10, 11, 12)]
+X.product = X[, c(1, 2, 5, 6)]
+X.promotion = X[, c(7, 8)]
+X.platform = X[, c(3, 4)]
 ```
 
 #### Detect dependent variables
