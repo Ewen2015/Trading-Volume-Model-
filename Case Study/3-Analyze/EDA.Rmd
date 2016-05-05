@@ -1,14 +1,20 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "EDA"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "May 3, 2016"
 output: html_document
 =======
+=======
+>>>>>>> Ewen2015/master
 title: "Eexploratory Data Analysis"
 author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "April 25, 2016"
 output: pdf_document
+<<<<<<< HEAD
+>>>>>>> Ewen2015/master
+=======
 >>>>>>> Ewen2015/master
 ---
 
@@ -40,15 +46,21 @@ Based on cause and effect relationship, we divide the variales into four causes.
 
 ```{r}
 <<<<<<< HEAD
+<<<<<<< HEAD
 X.market = X[, c(8, 10, 11, 12)]
 X.product = X[, c(1, 2, 5, 6)]
 X.promotion = X[, c(7, 8)]
 X.platform = X[, c(3, 4)]
 =======
+=======
+>>>>>>> Ewen2015/master
 X.product = X[, c(1, 2, 5, 6)]
 X.promotion = X[, c(7, 8)]
 X.platform = X[, c(3, 4)]
 X.market = X[, c(9, 10, 11, 12, 13)]
+<<<<<<< HEAD
+>>>>>>> Ewen2015/master
+=======
 >>>>>>> Ewen2015/master
 ```
 
