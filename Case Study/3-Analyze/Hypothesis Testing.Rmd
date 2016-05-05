@@ -1,9 +1,23 @@
 ---
 title: "Hypothesis Testing"
-author: "Enqun Wang"
+author: "Enqun Wang (EW), Yiyan Zhou (YZ)"
 date: "April 26, 2016"
-output: pdf_document
+output: html_document
 ---
+
+
+
+#### Input the data
+
+```{r message=FALSE}
+setwd("/Users/zhouyiyan/Documents/STAA568 Topics in Industrial Organizational Statistics/DMAIC/Case Study/3-Analyze")
+
+require(dplyr)
+
+df = data.frame(read.csv("data.csv", header = T)[-c(1:4),-c(2:3)])
+head(df)
+```
+
 
 According to the exploratory data analysis, we decide to first elect variables as follows,
 
@@ -27,3 +41,76 @@ According to the exploratory data analysis, we decide to first elect variables a
 
 1. R.007
 
+
+#### Rate of Return
+
+```{r}
+chisq.test(df$Rate.of.Return, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the rate of return.
+
+
+
+#### Term
+
+```{r}
+chisq.test(df$Term, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the term.
+
+
+#### TZD Account
+
+```{r}
+chisq.test(df$TZD.Account, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the TZD Account.
+
+
+#### LB Received
+
+```{r}
+chisq.test(df$LB.Received, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the LB Received.
+
+
+#### LB Used
+
+```{r}
+chisq.test(df$LB.Used, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the LB Used.
+
+
+#### Balance
+
+```{r}
+chisq.test(df$Balance, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the balance.
+
+
+#### Capital Inflow
+
+```{r}
+chisq.test(df$Capital.Inflow, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the Capital Inflow.
+
+
+
+#### R.007
+
+```{r}
+chisq.test(df$R.007, df$Increase.Rate.5Day)
+```
+
+The p-value of the test is less than 0.05, and we reject the null hypothesis and conclude that the 5-day increase rate is not independent of the R.007.
